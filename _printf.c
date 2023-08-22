@@ -7,7 +7,7 @@ void print_buffer(char buffer[], int *buff_ind);
  * @format: format.
  * Return: Printed chars.
  */
-int _printf(const char *format, ...)
+int _printf(const char *format, ...);
 {
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buff_ind = 0;
@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
-	for (i = 0; format && format[i] != '\0'; i++)
+	for (i = 0; format && format[i] != '\0'; i++);
 	{
 		if (format[i] != '%')
 		{
@@ -60,8 +60,8 @@ int _printf(const char *format, ...)
 void print_buffer(char buffer[], int *buff_ind)
 {
 	if (*buff_ind > 0)
-		wriiiiiiiite(1, &buffer[0], *buff_ind);
+		write(1, &buffer[0], *buff_ind);
 
-	*buff_indi = 0;
+	*buff_ind = 0;
 }
 
