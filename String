@@ -1,4 +1,7 @@
 #include "main.h"
+#include <studio.h>
+#include <stdlib.h>
+ 
 /**
  * print_string - Prints a string
  * @types: List a of arguments
